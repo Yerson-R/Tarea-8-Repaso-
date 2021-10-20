@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lan="es">
+    <head> 
+        <title>Repaso página</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body class="img">
+
+        <!-- LOS DATOS USADOS EN ESTA PÁGINA SON PASADOS E INEXACTOS, 
+        SOLO FUERON UTILIZADOS PARA COMPLETAR LA ACTIVIDAD -->
+
+
+        <h1>como convertir de tu puntaje de icfes a  puntaje de la UNAL</h1>
+        <br>
+        <p1 class="introduccion">En los ultimos años se han venido presentando inconvenientes con la presentacion de la prueba de la Universidad Nacional, por lo tanto 
+            las administrativas se tomaron el atrevimiento de hacer valer el resultado del ICFES reemplazando este examen, para ello se necesita hacer una conversion de tu puntaje del ICFES
+            a los puntajes necesarios para ingresar a tu carrera. 
+            <br>
+            [Recuerda que el ICFES mide sus resultados de 0 hasta 500 puntos]
+        </p1>
+
+        <nav>
+        <article class="operacion">
+            <h5>Imagen de la conversion de Resultado del ICFES a puntaje de la UNAL</h5>
+            <img src="src/O3.png" width="500" height="250">
+        </article>
+
+        <table>
+        <tr>
+            <th>carreras</th>
+            <th>puntaje necesario (puntaje UNAL)</th>
+        </tr>
+        <tr>
+            <td>Ingenieria Industrial</td>
+            <td>642</td>
+        </tr>
+        <tr>
+            <td>Geología</td>
+            <td>646</td>
+        </tr>
+        <tr>
+            <td>Ingenieria Civil</td>
+            <td>616</td>
+        </tr>
+        <tr>
+            <td>Ingenieria Agricola</td>
+            <td>394</td>
+        </tr>
+        <tr>
+            <td>psicologia</td>
+            <td>646</td>
+        </tr>
+        <tr>
+            <td>Ingenieria en sistemas</td>
+            <td>661</td>
+        </tr>
+        <tr>
+            <td>Medicina</td>
+            <td>746</td>
+        </tr>
+        <tr>
+            <td>Ingenieria mecatronica</td>
+            <td>695</td>
+        </tr>
+        <tr>
+            <td>trabajo social</td>
+            <td>589</td>
+        </tr>
+        <tr>
+            <td>enfermeria</td>
+            <td>570</td>
+        </tr>
+        <tr>
+            <td>Ingenieria electrica</td>
+            <td>574</td>
+        </tr>
+        <tr>
+            <td>diseño grafica</td>
+            <td>618</td>
+        </tr>
+        <tr>
+            <td>derecho</td>
+            <td>666</td>
+        </tr>
+
+        </table>
+
+        </nav>
+        
+        <footer>
+            <h3>Convertidor</h3>
+            <input id="puntaje" type="number">
+            <button onclick="resultado()">RESULTADO</button>
+            <h4>Puntaje convertido</h4>
+            <p id="resultadodeoperacion"></p>
+        </footer>
+
+
+        <script>
+            function resultado(){
+                var puntaje = document.getElementById("puntaje").value;
+                var operacion = (parseInt(puntaje) -70) *2;
+                document.getElementById("resultadodeoperacion").innerHTML = operacion
+            }
+        </script>
+    </body>
+</html>

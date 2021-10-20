@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body h1 {
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+    background-color: brown;
+    color: white;
+    width: auto;
+    height: 50px;
+    
+}
+.introduccion {
+    text-align: justify;
+}
+
+table, th, td{
+    text-transform: capitalize;
+    text-align: justify;
+    border: 1px solid black;
+
+}
+table {
+    margin-left: 290px;
+    margin-top: 25px;
+}
+
+.img {
+    background: url(../src/hola.jpg);
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.operacion {
+    text-align: center;
+    
+}
+
+nav {
+    display: inline-flex;
+}
+footer button{
+    text-shadow: 1px 1px;
+    border-radius: 12px;
+    width: 100px;
+}
+footer input{
+    border-radius: 9px;
+}
+footer button:hover {
+    color:white;
+    background: brown;
+    transition: 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
